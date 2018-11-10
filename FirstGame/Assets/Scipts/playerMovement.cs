@@ -12,23 +12,27 @@ public float sidewaysForce = 500f;
 	{
 		rb.AddForce(0,0,forwardForce * Time.deltaTime);
 
-		if(Input.GetKey("d"))
-		{
-			rb.AddForce(sidewaysForce * Time.deltaTime,0,0);
-		}
-
-		if(Input.GetKey("a"))
-		{
-			rb.AddForce(-sidewaysForce * Time.deltaTime,0,0);
-		}
-
 		if(Input.GetKey("s"))
 		{
-			rb.AddForce(0,0,-sidewaysForce * Time.deltaTime);
+			rb.velocity = Vector3.zero;
+			rb.AddForce(sidewaysForce * Time.deltaTime,0,0);
 		}
 
 		if(Input.GetKey("w"))
 		{
+			rb.velocity = Vector3.zero;
+			rb.AddForce(-sidewaysForce * Time.deltaTime,0,0);
+		}
+
+		if(Input.GetKey("a"))
+		{
+			rb.velocity = Vector3.zero;
+			rb.AddForce(0,0,-sidewaysForce * Time.deltaTime);
+		}
+
+		if(Input.GetKey("d"))
+		{
+			rb.velocity = Vector3.zero;
 			rb.AddForce(0,0,sidewaysForce * Time.deltaTime);
 		}
 	}

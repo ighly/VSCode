@@ -55,9 +55,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scipts\CubeMeshData.cs" />
      <Compile Include="Assets\Scipts\followPlayer.cs" />
+     <Compile Include="Assets\Scipts\menuController.cs" />
      <Compile Include="Assets\Scipts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scipts\playerMovement.cs" />
-     <Compile Include="Assets\Scipts\submesh.cs" />
+     <Compile Include="Assets\Scipts\waitForSeconds.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/Jessica/Documents/unity vscode/VSCode/FirstGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
